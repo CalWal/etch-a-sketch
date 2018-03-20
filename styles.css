@@ -1,0 +1,71 @@
+#controls {
+  width: 5.5em;
+  float: left;
+  background-color: lightgray;
+  height: 600px;
+  margin-right: 30px;
+  text-align: center;
+  border: 3px solid black;
+}
+
+#controls h3 {
+  padding-bottom: 6px;
+  border-bottom: 3px solid black;
+}
+
+#sizeController p {
+  margin: 0px;
+}
+
+#colorOpt input {
+  height: 40px;
+  width: 40px;
+}
+
+#colorOpt p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#sizeOpt {
+  width: 45px;
+  margin-bottom: 10px;
+}
+
+
+.divGrid {
+  color: white;
+  border: 1px solid darkgray;
+  padding:0px;
+  margin:0px;
+}
+
+.divGrid:hover {
+  --userColor: #EFC30F;
+  background-color: --userColor;
+
+}
+
+.container {
+  --gridSize: 16;
+  --gridGap: 1px;
+
+  background-color: lightgray;
+  width: 600px;
+  height: 600px;
+
+  display: grid;
+  grid-gap: var(--gridGap);
+  grid-template-columns: repeat(var(--gridSize), 1fr);
+  grid-template-rows: repeat(var(--gridSize), 1fr);
+
+}
+
+.gridButton {
+  padding: 10px;
+  margin: 5px 5px 5px 5px;
+}
+
+.gridButton:hover {
+  color: red;
+}

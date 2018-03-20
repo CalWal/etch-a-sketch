@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<title> Etch-A-Sketch! </title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<!-- This is the control section of the Etch-A-Sketch -->
+<div id="controls">
+  <h3> Grid Controls </h3>
+  <button class="gridButton" onClick="createGrid()"> Reset </button>
+<!-- This allows you to select the size of the grid  -->
+  <div id="size controller">
+    <p> Grid Size: </p>
+    <input id="sizeOpt" type="number" value= "16"> </input>
+  </div>
+<!-- This allows you to select the color of the grid -->
+  <div id="colorOpt">
+    <p> Color: </p>
+    <input id="colorChoice" tyle="color"> </input>
+  </div>
+
+</div>
+<!-- This is the actual grid container -->
+<div id="gridContainer" class="container"></div>
+
+
+<script src="main.js"> </script>
+</body>
+</html>
